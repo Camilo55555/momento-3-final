@@ -1,0 +1,50 @@
+/* Fondo principal y tipografía general */
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #f8fafc;
+}
+
+/* Ocultar elementos por defecto de Streamlit para un diseño más limpio */
+header {visibility: hidden;}
+
+/* Estilo de los valores numéricos de las tarjetas métricas */
+div[data-testid="stMetricValue"] {
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    color: #38bdf8 !important;
+}
+
+/* Título con efecto de degradado brillante */
+.title-banner {
+    background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 2.8rem;
+    text-shadow: 0px 4px 15px rgba(59, 130, 246, 0.3);
+    margin-bottom: 0.2rem;
+}
+
+.sub-banner {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilo llamativo para el botón principal */
+div.stButton > button:first-child {
+    background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%) !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    border-radius: 12px !important;
+    border: none !important;
+    padding: 14px 28px !important;
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4) !important;
+    transition: all 0.3s ease !important;
+}
+
+div.stButton > button:first-child:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 6px 25px rgba(124, 58, 237, 0.6) !important;
+}
