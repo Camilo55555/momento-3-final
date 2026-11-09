@@ -1,0 +1,68 @@
+/* Fondo general de la aplicación en modo oscuro profundo */
+.main, .stApp {
+    background-color: #0b0f19 !important;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #e2e8f0;
+}
+
+/* Encabezados con destello de neón cian */
+h1 {
+    color: #00f2fe;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
+    margin-bottom: 0.5rem;
+}
+
+h2, h3, h5 {
+    color: #4facfe;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(79, 172, 254, 0.3);
+}
+
+/* Contenedores y tarjetas amplias */
+div.stMetric, div[data-testid="stVerticalBlock"] > div.stElementContainer {
+    background-color: #131c31 !important;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.08);
+    border: 1px solid rgba(0, 242, 254, 0.2);
+}
+
+/* Botones principales con neón magenta/fucsia */
+.stButton > button {
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+    color: #0b0f19;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #f72585 0%, #7209b7 100%);
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(247, 37, 133, 0.6);
+}
+
+/* Estilo para las pestañas superiores */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: #131c31;
+    border-radius: 8px 8px 0px 0px;
+    color: #a5f3fc;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 242, 254, 0.2);
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%) !important;
+    color: #0b0f19 !important;
+    font-weight: 700;
+}
